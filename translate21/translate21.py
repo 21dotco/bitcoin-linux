@@ -13,7 +13,7 @@ requests = BitTransferRequests(wallet, username)
 
 @click.command()
 @click.argument('inp_text', required=False)
-@click.option('--server', default='localhost:5000', help='ip:port to connect to')
+@click.option('--server', default='[::]:5000', help='ip:port to connect to')
 def cli(server, inp_text):
 
     """ Call the translate api hosted on the micropayments server"""

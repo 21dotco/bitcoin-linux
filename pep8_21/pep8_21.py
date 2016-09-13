@@ -13,7 +13,7 @@ requests = BitTransferRequests(wallet, username)
 @click.command()
 @click.argument('file_name', required=False)
 @click.option('--server',
-              default='localhost:5001',
+              default='[::]:5001',
               help='ip:port to connect to')
 def pep8_21(server, file_name):
     """ Call the pep8 linting api hosted on the micropayments server"""
