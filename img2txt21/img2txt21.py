@@ -11,7 +11,7 @@ requests = BitTransferRequests(wallet, username)
 
 @click.command()
 @click.argument('file_name', required=False)
-@click.option('--server', default='localhost:5001', help='ip:port to connect to')
+@click.option('--server', default='[::]:5001', help='ip:port to connect to')
 def img2txt21(server, file_name):
     """ Call the img to text api hosted on the micropayments server"""
 

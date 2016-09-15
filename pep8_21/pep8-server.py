@@ -83,4 +83,4 @@ def pep8linter():
 # set up and run the server
 if __name__ == '__main__':
         app.debug = True
-        app.run(host='0.0.0.0', port=5001)
+        app.run(host='::', port=5001)
